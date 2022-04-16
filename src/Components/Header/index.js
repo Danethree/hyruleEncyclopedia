@@ -14,7 +14,7 @@ export default function Header()
            
                     Search
                 </Nav.Link>
-                <Nav.Link href="#home">About me</Nav.Link>
+            
                 </Nav>
             </Container>
     

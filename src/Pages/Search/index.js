@@ -8,7 +8,7 @@ export default function Search()
     const [text,setText] = useState(''); 
     const [result,setResult] = useState(null)
     const  [click,setClick] = useState(false);
-    const [load,setLoad] = useState(true);
+
     function handleChange (e)
     {
         setText(e.target.value)
@@ -27,7 +27,7 @@ export default function Search()
     }
 
     loadApi();
-    setLoad(false);
+   
   }
   
     return(
@@ -35,7 +35,7 @@ export default function Search()
             <br/> <br/>
             <Container fluid = 'md' >
          
-          <InputGroup className="mb-3">
+          <InputGroup className="mb-3" size = "lg">
                 <InputGroup.Text id="inputGroup-sizing-default">
 
                 <span class="material-icons">
@@ -52,10 +52,12 @@ export default function Search()
                 >
             
                 </FormControl>
-                </InputGroup>
-                <Button variant="secondary"
+                <Button variant="dark"
                 onClick = {handleClick}
+                
                 >Search</Button>{' '}
+                </InputGroup>
+               
                  <br/> <br/>      <br/> <br/>
 
           </Container>
